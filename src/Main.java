@@ -46,21 +46,20 @@ public class Main {
         int salaryMasha=67760;
         int salaryDenis=83690;
         int salaryKristina=76230;
-        int yearSalaryMasha=salaryMasha*12;
-        int yearSalaryDenis=salaryDenis*12;
-        int yearSalaryKristina=salaryKristina*12;
+
         int increasedSalaryMasha=salaryMasha+salaryMasha*10/100;
         int increasedSalaryDenis=salaryDenis+salaryDenis*10/100;
         int increasedSalaryKristina=salaryKristina+salaryKristina*10/100;
-        int yearIncreasedSalaryMasha=increasedSalaryMasha*12;
-        int yearIncreasedSalaryDenis=increasedSalaryDenis*12;
-        int yearIncreasedSalaryKristina=increasedSalaryKristina*12;
-        System.out.println("Маша будет получать в год"+yearIncreasedSalaryMasha+"рублей");
-        System.out.println("Денис будет получать в год"+yearIncreasedSalaryDenis+"рублей");
-        System.out.println("Кристина будет получать в год"+yearIncreasedSalaryKristina+"рублей");
-        int yearIncomeMasha=yearIncreasedSalaryMasha-yearSalaryMasha;
-        int yearIncomeDenis=yearIncreasedSalaryDenis-yearSalaryDenis;
-        int yearIncomeKristina=yearIncreasedSalaryKristina-yearSalaryKristina;
+
+        int diffSalaryMasha=increasedSalaryMasha-salaryMasha;
+        int diffSalaryDenis=increasedSalaryDenis-salaryDenis;
+        int diffSalaryKristina=increasedSalaryKristina-salaryKristina;
+        System.out.println("Маша будет получать"+increasedSalaryMasha+"рублей");
+        System.out.println("Денис будет получать"+increasedSalaryDenis+"рублей");
+        System.out.println("Кристина будет получать"+increasedSalaryKristina+"рублей");
+        int yearIncomeMasha=diffSalaryMasha*12;
+        int yearIncomeDenis=diffSalaryDenis*12;
+        int yearIncomeKristina=diffSalaryKristina*12;
         System.out.println("Маша годовой доход вырос"+yearIncomeMasha+"рублей");
         System.out.println("Денис годовой доход вырос"+yearIncomeDenis+"рублей");
         System.out.println("Кристина годовой доход вырос"+yearIncomeKristina+"рублей");
